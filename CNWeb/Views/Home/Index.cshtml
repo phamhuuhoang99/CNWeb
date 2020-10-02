@@ -1,0 +1,1470 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- banner -->
+<div class="ban-top">
+    <div class="container">
+        <div class="top_nav_left">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu__list">
+                            <li class="active menu__item"><a class="menu__link" href="/Home/Index">Trang Chủ <span class="sr-only">(current)</span></a></li>
+                            <li class=" menu__item"><a class="menu__link" href="/Home/About">Về Chúng Tôi</a></li>
+                            <li class="dropdown menu__item">
+                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trang Phục Nam <span class="caret"></span></a>
+                                <ul class="dropdown-menu multi-column columns-3">
+                                    <div class="agile_inner_drop_nav_info">
+                                        <div class="col-sm-6 multi-gd-img1 multi-gd-text ">
+                                            <a href="/Home/Men"><img src="~/images/top2.jpg" alt=" " /></a>
+                                        </div>
+                                        <div class="col-sm-3 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <a class="title_list" style="font-size: 18px;">Quần áo</a>
+                                                <li><a href="/Home/Men">Áo Khoác</a></li>
+                                                <li><a href="/Home/Men">Áo Thun</a></li>
+                                                <li><a href="/Home/Men">Áo sơ mi</a></li>
+                                                <li><a href="/Home/Men">Polo</a></li>
+                                                <li><a href="/Home/Men">Quần ngắn</a></li>
+                                                <li><a href="/Home/Men">Quần dài</a></li>
+                                                <li><a href="/Home/Men">Bé trai</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <a class="title_list" style="font-size: 18px;">Phụ kiện</a>
+                                                <li><a href="/Home/Men">Khẩu trang</a></li>
+                                                <li><a href="/Home/Men">Tất</a></li>
+                                                <li><a href="/Home/Men">Bao lô,túi xách</a></li>
+                                                <li><a href="/Home/Men">Nón</a></li>
+                                                <li><a href="/Home/Men">Khác</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown menu__item">
+                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trang Phục Nữ<span class="caret"></span></a>
+                                <ul class="dropdown-menu multi-column columns-3">
+                                    <div class="agile_inner_drop_nav_info">
+                                        <div class="col-sm-3 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <a class="title_list" style="font-size: 18px;">Quần áo</a>
+                                                <li><a href="/Home/Womens">Áo Khoác</a></li>
+                                                <li><a href="/Home/Womens">Áo Thun</a></li>
+                                                <li><a href="/Home/Womens">Áo sơ mi</a></li>
+                                                <li><a href="/Home/Womens">Polo</a></li>
+                                                <li><a href="/Home/Womens">Quần ngắn</a></li>
+                                                <li><a href="/Home/Womens">Quần dài</a></li>
+                                                <li><a href="/Home/Womens">Bé gái</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3 multi-gd-img">
+                                            <ul class="multi-column-dropdown">
+                                                <a class="title_list" style="font-size: 18px;">Phụ kiện</a>
+                                                <li><a href="/Home/Womens">Khẩu trang</a></li>
+                                                <li><a href="/Home/Womens">Tất</a></li>
+                                                <li><a href="/Home/Womens">Bao lô,túi xách</a></li>
+                                                <li><a href="/Home/Womens">Nón</a></li>
+                                                <li><a href="/Home/Womens">Khác</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 multi-gd-img multi-gd-text ">
+                                            <a href="/Home/Womens"><img src="~/images/top1.jpg" alt=" " /></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class=" menu__item"><a class="menu__link" href="/Home/Contact">Liên Hệ</a></li>
+                            <li class=" menu__item"><a class="menu__link" href="/Home/Blog">Blog</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="top_nav_right">
+            <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+                <form action="#" method="post" class="last">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="display" value="1">
+                    <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                </form>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //banner-top -->
+<!-- Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body modal-body-sub_agile">
+                <div class="col-md-8 modal_body_left modal_body_left1">
+                    <h3 class="agileinfo_sign">Đăng nhập <span>Ngay</span></h3>
+                    <form>
+                        <div class="styled-input agile-styled-input-top">
+                            <input type="email" name="Email" required="">
+                            <label>Email</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="password" name="Password" required="">
+                            <label>Mật khẩu</label>
+                            <span></span>
+                        </div>
+                        <input type="submit" value="Đăng nhập">
+                    </form>
+                    <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                        <li>
+                            <a href="#" class="facebook">
+                                <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pinterest">
+                                <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <p><a href="#" data-toggle="modal" data-target="#myModal2"> Bạn đã chưa có tài khoản?</a></p>
+
+                </div>
+                <div class="col-md-4 modal_body_right modal_body_right1">
+                    <img src="~/images/log_pic.jpg" alt=" " />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //Modal content-->
+    </div>
+</div>
+<!-- //Modal1 -->
+<!-- //Modal1 -->
+<!-- Modal2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body modal-body-sub_agile">
+                <div class="col-md-8 modal_body_left modal_body_left1">
+                    <h3 class="agileinfo_sign">Đăng ký <span>Ngay</span></h3>
+                    <form>
+                        <div class="styled-input agile-styled-input-top">
+                            <input type="text" name="Name" required="">
+                            <label>Họ tên</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="email" name="Email" required="">
+                            <label>Email</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="password" name="password" required="">
+                            <label>Mật khẩu</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="password" name="Confirm Password" required="">
+                            <label>Nhập lại mật khẩu</label>
+                            <span></span>
+                        </div>
+                        <input type="submit" value="Đăng ký">
+                    </form>
+                    <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                        <li>
+                            <a href="#" class="facebook">
+                                <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pinterest">
+                                <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <p>
+                        <a href="#"></a>Tôi đồng ý với các điều khoản của bạn
+                    </p>
+
+                </div>
+                <div class="col-md-4 modal_body_right modal_body_right1">
+                    <img src="~/images/log_pic.jpg" alt=" " />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //Modal content-->
+    </div>
+</div>
+<!-- //Modal2 -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h3>Giảm Giá <span>Khủng</span></h3>
+                    <p>Đặc biệt trong ngày hôm nay</p>
+                    <a class="hvr-outline-out button2" href="/Home/Men">Mua Ngay </a> 
+                </div>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h3>Thời Trang <span>Mùa Hè</span></h3>
+                    <p>Giảm Giá Sản Phẩm Mới</p>
+                    <a class="hvr-outline-out button2" href="/Home/Men">Mua Ngay </a>
+                </div>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h3>Giảm giá <span>Khủng</span></h3>
+                    <p>Đặc biệt trong ngày hôm nay</p>
+                    <a class="hvr-outline-out button2" href="/Home/Men">Mua Ngay </a>
+                </div>
+            </div>
+        </div>
+        <div class="item item4">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h3>Thời Trang <span>Mùa Hè</span></h3>
+                    <p>Giảm giá sản phẩm mới</p>
+                    <a class="hvr-outline-out button2" href="/Home/Men">Mua Ngay </a>
+                </div>
+            </div>
+        </div>
+        <div class="item item5">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h3>Giảm giá <span>Khủng</span></h3>
+                    <p>Đặc biệt trong ngày hôm nay</p>
+                    <a class="hvr-outline-out button2" href="/Home/Men">Mua Ngay </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!-- The Modal -->
+</div>
+
+<!-- banner -->
+<!-- //banner -->
+<div class="banner_bottom_agile_info">
+    <div class="container">
+        <div class="banner_bottom_agile_info_inner_w3ls">
+            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                    <img src="~/images/bottom1.jpg" alt=" " class="img-responsive" />
+                    <figcaption>
+                        <h3><span>Đ</span>ặt Gạch</h3>
+                        <p>Hàng mới về</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                    <img src="~/images/bottom2.jpg" alt=" " class="img-responsive" />
+                    <figcaption>
+                        <h3><span>Đ</span>ặt Gạch</h3>
+                        <p>Hàng mới về</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- schedule-bottom -->
+<div class="schedule-bottom">
+    <div class="col-md-6 agileinfo_schedule_bottom_left">
+        <img src="~/images//mid.jpg" alt=" " class="img-responsive" />
+    </div>
+    <div class="col-md-6 agileits_schedule_bottom_right">
+        <div class="w3ls_schedule_bottom_right_grid">
+            <h3>Tiết kiệm đến <span>50%</span> trong tuần này</h3>
+            <p>Cơ hội có một không hai dành cho các tính đồ thời trang.</p>
+            <div class="col-md-4 w3l_schedule_bottom_right_grid1">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <h4>Khách hàng</h4>
+                <h5 class="counter">653</h5>
+            </div>
+            <div class="col-md-4 w3l_schedule_bottom_right_grid1">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                <h4>Sự kiện</h4>
+                <h5 class="counter">823</h5>
+            </div>
+            <div class="col-md-4 w3l_schedule_bottom_right_grid1">
+                <i class="fa fa-shield" aria-hidden="true"></i>
+                <h4>Giải thưởng</h4>
+                <h5 class="counter">45</h5>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!-- //schedule-bottom -->
+<!-- banner-bootom-w3-agileits -->
+<div class="banner-bootom-w3-agileits">
+    <div class="container">
+        <h3 class="wthree_text_info">Xu hướng <span>Thời Trang</span></h3>
+
+        <div class="col-md-5 bb-grids bb-left-agileits-w3layouts">
+            <a href="/Home/Womens">
+                <div class="bb-left-agileits-w3layouts-inner grid">
+                    <figure class="effect-roxy">
+                        <img src="~/images//bb1.jpg" alt=" " class="img-responsive" />
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Giảm đến 55%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-7 bb-grids bb-middle-agileits-w3layouts">
+            <a href="/Home/Men">
+                <div class="bb-middle-agileits-w3layouts grid">
+                    <figure class="effect-roxy">
+                        <img src="~/images//bottom3.jpg" alt=" " class="img-responsive" />
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Giảm đến 55%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="/Home/Men">
+                <div class="bb-middle-agileits-w3layouts forth grid">
+                    <figure class="effect-roxy">
+                        <img src="~/images//bottom4.jpg" alt=" " class="img-responsive">
+                        <figcaption>
+                            <h3><span>S</span>ale </h3>
+                            <p>Giảm đến 65%</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--/grids-->
+<div class="agile_last_double_sectionw3ls">
+    <div class="col-md-6 multi-gd-img multi-gd-text ">
+        <a href="/Home/Womens">
+            <img src="~/images//bot_1.jpg" alt=" ">
+            <h4>Ưu đãi đến <span>50%</span></h4>
+        </a>
+
+    </div>
+    <div class="col-md-6 multi-gd-img multi-gd-text ">
+        <a href="/Home/Womens"> 
+            <img src="~/images//bot_2.jpg" alt=" ">
+            <h4>Ưu đãi đến <span>50%</span></h4>
+        </a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--/grids-->
+<!-- /new_arrivals -->
+<div class="new_arrivals_agile_w3ls_info">
+    <div class="container">
+        <h3 class="wthree_text_info"><span>Sản phẩm </span>Mới</h3>
+        <div id="horizontalTab">
+            <ul class="resp-tabs-list">
+                <li> Đồ Nam</li>
+                <li> Đồ Nữ</li>
+                <li> Phụ Kiện</li>
+            </ul>
+            <div class="resp-tabs-container">
+                <!--/tab_one-->
+                <div class="tab1">
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f1.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b1.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN MTS</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">249,000 VND</span>
+                                    <del>270,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value="249000">
+                                            <input type="hidden" name="item_name" value="ÁO THUN MTS">
+                                            <input type="hidden" name="amount" value="">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+
+                                <img src="~/images/hinh_f2.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_2b.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN MTS 1003</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">249,000 VND</span>
+                                    <del>270,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ÁO THUN MTS 1003">
+                                            <input type="hidden" name="amount" value="249000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f3.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b3.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN RELAX</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">259,000 VND</span>
+                                    <del>290,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ÁO THUN RELAX">
+                                            <input type="hidden" name="amount" value="259000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f4.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b4.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ĐÔI KẾT HỢP CSM </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">359,000 VND</span>
+                                    <del>499,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ĐÔI KẾT HỢP CSM ">
+                                            <input type="hidden" name="amount" value="359000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f5.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b5.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">QUẦN SHORT THUN</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">349,000 VND</span>
+                                    <del>459,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="QUẦN SHORT THUN" />
+                                            <input type="hidden" name="amount" value="349000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f6.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b6.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN AQUA</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">239,000 VND</span>
+                                    <del>399,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO THUN AQUA" />
+                                            <input type="hidden" name="amount" value="239000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f7.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b7.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN OCEANS</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">239,000 VND</span>
+                                    <del>299,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO THUN OCEANS" />
+                                            <input type="hidden" name="amount" value="239000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/hinh_f8.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/hinh_b8.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN FAMILY</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">239,000 VND</span>
+                                    <del>359,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO THUN FAMILY" />
+                                            <input type="hidden" name="amount" value="239,000 VND" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--//tab_one-->
+                <!--/tab_two-->
+                <div class="tab2">
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f1.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b1.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO KHOÁC UV</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">629,000 VND</span>
+                                    <del>799,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ÁO KHOÁC UV">
+                                            <input type="hidden" name="amount" value="629000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f2.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b2.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN LOTUS</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">219,000 VND</span>
+                                    <del>300,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ÁO THUN LOTUS">
+                                            <input type="hidden" name="amount" value="219000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f3.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b3.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN RELAX</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">459,000 VND</span>
+                                    <del>559,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="business" value=" ">
+                                            <input type="hidden" name="item_name" value="ÁO THUN RELAX">
+                                            <input type="hidden" name="amount" value="459000">
+                                            <input type="hidden" name="discount_amount" value="20000">
+                                            <input type="hidden" name="currency_code" value="VND">
+                                            <input type="hidden" name="return" value=" ">
+                                            <input type="hidden" name="cancel_return" value=" ">
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button">
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f4.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b4.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN OVERSIZE</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">669,000 VND</span>
+                                    <del>569,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO THUN OVERSIZE" />
+                                            <input type="hidden" name="amount" value="669000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f5.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b5.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO THUN REGULAR </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">369,000 VND</span>
+                                    <del>459,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO THUN REGULAR" />
+                                            <input type="hidden" name="amount" value="369000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f6.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b6.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO NÚT CHÉO</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">369,000 VND</span>
+                                    <del>469,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO NÚT CHÉO " />
+                                            <input type="hidden" name="amount" value="369000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f7.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b7.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO SƠ MI CROPTOP</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">369,000 VND</span>
+                                    <del>579,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO SƠ MI CROPTOP" />
+                                            <input type="hidden" name="amount" value="369000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/w_f9.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/w_b9.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">ÁO CARO NỮ</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">549,000 VND</span>
+                                    <del>729,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="ÁO CARO NỮ" />
+                                            <input type="hidden" name="amount" value="549000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--//tab_two-->
+                <div class="tab3">
+
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/b1.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/b1.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Cặp Laptop</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">300,000 VND</span>
+                                    <del>350,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value=" Cặp Laptop" />
+                                            <input type="hidden" name="amount" value="300000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/b2.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/b2.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Balo Puma</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">300,000 VND</span>
+                                    <del>350,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Balo Puma" />
+                                            <input type="hidden" name="amount" value="300000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/b4.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/b4.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Túi xách du lịch </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">300,000 VND</span>
+                                    <del>350,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Túi xách du lịch " />
+                                            <input type="hidden" name="amount" value="300000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/s1.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/s1.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single"> Giày Da Cao Cấp </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">600,000 VND</span>
+                                    <del>650,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value=" Giày Da Cao Cấp " />
+                                            <input type="hidden" name="amount" value="600000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/s2.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/s2.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Giày Chạy Bộ </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">400,000 VND</span>
+                                    <del>500,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Giày Chạy Bộ" />
+                                            <input type="hidden" name="amount" value="30.99" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/s8.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/s8.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Giày Cao Gót </a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">400,000 VND</span>
+                                    <del>450,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Giày Cao Gót" />
+                                            <input type="hidden" name="amount" value="400000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/s7.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/s7.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Giày Thể Thao</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">300,000 VND</span>
+                                    <del>350,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Giày Thể Thao" />
+                                            <input type="hidden" name="amount" value="300000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product-men">
+                        <div class="men-pro-item simpleCart_shelfItem">
+                            <div class="men-thumb-item">
+                                <img src="~/images/s5.jpg" alt="" class="pro-image-front">
+                                <img src="~/images/s5.jpg" alt="" class="pro-image-back">
+                                <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                        <a href="/Home/Single" class="link-product-add-cart">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <span class="product-new-top">New</span>
+
+                            </div>
+                            <div class="item-info-product ">
+                                <h4><a href="/Home/Single">Giày Búp Bê</a></h4>
+                                <div class="info-product-price">
+                                    <span class="item_price">300,000 VND</span>
+                                    <del>350,000 VND</del>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="Giày Búp Bê" />
+                                            <input type="hidden" name="amount" value="300000" />
+                                            <input type="hidden" name="discount_amount" value="20000" />
+                                            <input type="hidden" name="currency_code" value="VND" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Thêm vào giỏ" class="button" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //new_arrivals -->
+<!-- /we-offer -->
+<!-- /we-offer -->
+<div class="sale-w3ls">
+    <div class="container">
+        <h6>ĐẠI TIỆC SALE LÊN ĐẾN <span>40%</span></h6>
+
+        <a class="hvr-outline-out button2" href="/Home/Single">Mua Ngay </a>
+    </div>
+</div>
+<!-- //we-offer -->
+<!-- //we-offer -->
+<!--/grids-->
+<div class="coupons">
+    <div class="coupons-grids text-center">
+        <div class="w3layouts_mail_grid">
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>FREE SHIP</h3>
+                    <p>Giao hàng tận nơi, nhanh chóng</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>HỔ TRỢ 24/7</h3>
+                    <p>Đội ngũ nhân viên nhiệt tình, năng động</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>ĐẢM BẢO CHÁT LƯỢNG</h3>
+                    <p>Cam kết về chất lượng</p>
+                </div>
+            </div>
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                </div>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3> COUPON QUÀ TẶNG MIỄN PHÍ</h3>
+                    <p>Nhiều quà tặng hấp dẫn</p>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+    </div>
+</div>
+<!--grids-->
